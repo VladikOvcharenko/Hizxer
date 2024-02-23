@@ -1,0 +1,20 @@
+// базовые подключения
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
+@import './components/btn';
+
+// подключения компонентов страницы
+@import './components/header';
+@import './components/hero';
+@import './components/process';
+@import './components/complex';
+@import './components/focus';
+@import './components/team';
+@import './components/coptain';
+@import './components/case';
+@import './components/choose';
+@import './components/review';
+@import './components/coll';
+@import './components/footer';

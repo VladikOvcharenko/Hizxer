@@ -1,0 +1,17 @@
+:root {
+  --font-family: 'Poppins', sans-serif;
+  --second-family: 'Nunito Sans', sans-serif;
+  --third-family: 'Inter', sans-serif;
+
+  --content-width: 1330px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --accent-color: #6941c6;
+  --second-color: #717171;
+  --dark-color: #1e1e1e;
+  --light-color: #fff;
+  --bg-color: #fbf8ff;
+  --text-color: #25282b;
+}

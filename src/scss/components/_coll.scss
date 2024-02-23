@@ -1,0 +1,130 @@
+.coll {
+  margin-top: 150px;
+  &-top {
+    background-color: var(--bg-color);
+    &-container {
+      padding: 54px 0;
+      position: relative;
+    }
+    &__title {
+      margin-left: 110px;
+      font-size: 32px;
+    }
+  }
+  &-bottom {
+    width: 100%;
+    height: 503px;
+    background-image: url('./../../img/footer-bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &-form {
+    position: absolute;
+    top: -120px;
+    right: 70px;
+    border-radius: 20px;
+    padding: 45px 26px;
+    max-width: 512px;
+    background-color: var(--light-color);
+    box-shadow: 0 4px 99px 0 rgba(0, 0, 0, 0.15);
+    &__title {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 128%;
+      text-transform: capitalize;
+      text-align: center;
+    }
+    &__wrapper {
+      display: grid;
+      gap: 24px;
+      margin-top: 24px;
+    }
+    &__item {
+      display: grid;
+      gap: 10px;
+    }
+    &__label {
+      font-weight: 500;
+      font-size: 14px;
+      color: #898989;
+    }
+    &__input {
+      padding: 15px 27px;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0 4px 63px 0 rgba(0, 0, 0, 0.08);
+      background: var(--light-color);
+      font-family: var(--font-family);
+      font-size: 13px;
+      color: #d9d9d9;
+    }
+    &__text {
+      padding: 17px 27px;
+      border-radius: 4px;
+      background: var(--light-color);
+      border: none;
+      resize: none;
+      box-shadow: 0 4px 63px 0 rgba(0, 0, 0, 0.08);
+    }
+    &__btn {
+      margin: 0 auto;
+      max-width: 270px;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+}
+
+@include small-tablet {
+  .coll {
+    margin-top: 150px;
+    &-top {
+      background-color: var(--bg-color);
+      &-container {
+        padding: 74px 0;
+        position: relative;
+      }
+    }
+    &-bottom {
+      height: 788px;
+      background-size: cover;
+    }
+    &-form {
+      position: absolute;
+      top: 210px;
+      right: 50px;
+    }
+  }
+}
+@include mobile {
+  .coll {
+    margin-top: 80px;
+    &-top {
+      background-color: var(--bg-color);
+      &-container {
+        padding: 74px 0;
+        position: relative;
+      }
+      &__title {
+        margin: 0 56px;
+        text-align: center;
+        font-size: 24px;
+      }
+    }
+    &-bottom {
+      height: 788px;
+      background-size: cover;
+    }
+    &-form {
+      position: absolute;
+      top: 240px;
+      left: 30px;
+      padding: 35px 16px;
+      width: 350px;
+
+      &__title {
+        font-size: 20px;
+      }
+    }
+  }
+}

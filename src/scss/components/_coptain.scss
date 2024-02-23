@@ -1,0 +1,198 @@
+.coptain {
+  padding: 144px 0;
+  &-list {
+    justify-content: center;
+    gap: 75px;
+    &__item {
+      width: 126px;
+      height: 126px;
+      border-radius: 50%;
+      justify-content: center;
+      background-color: var(--light-color);
+      box-shadow: 0 36px 111px 0 rgba(0, 0, 0, 0.15);
+      transition: all 0.4s ease;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 40px;
+      cursor: pointer;
+      svg {
+        width: 48px;
+        height: 44px;
+        fill: var(--accent-color);
+      }
+
+      &:hover {
+        color: var(--accent-color);
+        background-color: var(--accent-color);
+        box-shadow: 0 0px 60px 0 var(--accent-color);
+        svg {
+          width: 58px;
+          height: 54px;
+          fill: var(--light-color);
+        }
+      }
+      &.active {
+        color: var(--accent-color);
+        background-color: var(--accent-color);
+        svg {
+          width: 58px;
+          height: 54px;
+          fill: var(--light-color);
+        }
+      }
+    }
+  }
+  &-container {
+    margin-top: 54px;
+    justify-content: center;
+    gap: 171px;
+  }
+  &-video {
+    width: 600px;
+    height: 420px;
+    border-radius: 8px;
+    box-shadow: 0 36px 111px 0 rgba(0, 0, 0, 0.15);
+    background-image: url('./../../img/play.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &-wrapper {
+    max-width: 537px;
+    flex-direction: column;
+    gap: 19px;
+    align-items: flex-start;
+
+    &__item {
+      display: none;
+      &.active {
+        display: grid;
+        gap: 38px;
+      }
+    }
+    &__title {
+    }
+    &__text {
+      max-width: 509px;
+      font-weight: 300;
+      line-height: 133%;
+      color: var(--second-color);
+    }
+    &-list {
+      align-items: start;
+      flex-direction: column;
+      gap: 16px;
+
+      font-weight: 300;
+      line-height: 133%;
+      font-size: 15px;
+      color: var(--second-color);
+
+      &__item {
+        padding-left: 28px;
+        background-image: url('./../../img/svg/polygon.svg');
+        background-repeat: no-repeat;
+        background-size: 18px;
+      }
+    }
+  }
+}
+
+@include small-tablet {
+  .coptain {
+    padding: 100px 0;
+    position: relative;
+    &-list {
+      position: absolute;
+      top: 100px;
+      left: 28px;
+      flex-direction: column;
+      gap: 38px;
+      &__item {
+        width: 76px;
+        height: 76px;
+        background-size: 20px;
+
+        svg {
+          width: 28px;
+          height: 34px;
+        }
+        &.active {
+          svg {
+            width: 48px;
+            height: 44px;
+          }
+        }
+      }
+    }
+    &-container {
+      margin: 0 28px;
+      flex-direction: column;
+      gap: 100px;
+      align-items: flex-start;
+    }
+    &-video {
+      margin-left: 88px;
+      max-width: 600px;
+      height: 420px;
+    }
+    &-wrapper {
+      margin: 0 auto;
+      max-width: 537px;
+      flex-direction: column;
+      align-items: flex-start;
+      &__item {
+        &.active {
+          display: block;
+          display: grid;
+          gap: 30px;
+        }
+      }
+    }
+  }
+}
+@include mobile {
+  .coptain {
+    padding: 100px 0;
+    position: relative;
+    &-list {
+      position: absolute;
+      top: 100px;
+      left: 28px;
+      flex-direction: column;
+      gap: 18px;
+      &__item {
+        width: 50px;
+        height: 50px;
+
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+        &.active {
+          svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    &-container {
+      gap: 70px;
+    }
+    &-video {
+      margin-left: 52px;
+      width: 264px;
+      height: 254px;
+    }
+    &-wrapper {
+      &__title {
+        font-size: 24px;
+      }
+      &__item {
+        &.active {
+          gap: 20px;
+        }
+      }
+    }
+  }
+}
