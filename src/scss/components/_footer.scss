@@ -29,21 +29,21 @@
     }
     &__location {
       padding-left: 32px;
-      background-image: url('./../../img/svg/location.svg');
+      background-image: url('../img/svg/location.svg');
       background-repeat: no-repeat;
       background-size: contain;
     }
     &__phone {
       color: var(--light-color);
       padding-left: 32px;
-      background-image: url('./../../img/svg/phone.svg');
+      background-image: url('../img/svg/phone.svg');
       background-repeat: no-repeat;
       background-size: contain;
     }
     &__email {
       color: var(--light-color);
       padding-left: 32px;
-      background-image: url('./../../img/svg/mail.svg');
+      background-image: url('../img/svg/mail.svg');
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -55,10 +55,6 @@
       font-weight: 500;
       font-size: 14px;
       color: var(--light-color);
-    }
-    &__list {
-    }
-    &__item {
     }
     &__link {
       display: flex;
@@ -145,7 +141,6 @@
         gap: 8px;
         align-items: flex-start;
       }
-
       &__link {
         font-size: 8px;
       }

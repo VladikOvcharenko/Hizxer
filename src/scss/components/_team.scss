@@ -11,8 +11,6 @@
     flex-direction: column;
     gap: 35px;
     align-items: start;
-    &__title {
-    }
     &-achievements {
       gap: 50px;
       align-items: flex-start;
@@ -45,7 +43,7 @@
     height: auto;
     min-height: 550px;
     max-height: 600px;
-    background-image: url('./../../img/team.jpg');
+    background-image: url('../img/team.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
