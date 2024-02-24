@@ -3,15 +3,21 @@
   background: linear-gradient(to left, #fbf8ff 70%, #ffffff 0%);
   &-container {
     display: grid;
+    justify-self: center;
+    margin: auto;
     grid-template-columns: 1fr 1fr;
     gap: 130px;
     padding: 100px 15px;
   }
   &-img {
+    justify-self: center;
+    margin: auto;
     height: auto;
     max-width: 100%;
   }
   &-wrapper {
+    justify-self: center;
+    margin: auto;
     flex-direction: column;
     align-items: flex-start;
     max-width: 460px;
