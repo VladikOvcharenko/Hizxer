@@ -14,6 +14,7 @@
   }
   &-form {
     left: 120px;
+    max-width: 512px;
     z-index: 9;
   }
   &-bottom {
@@ -35,7 +36,6 @@
     }
 
     &-form {
-      width: 100%;
       top: 230px;
       right: 50px;
     }
@@ -64,8 +64,8 @@
       position: absolute;
       top: 260px;
       left: 15px;
+      right: 15px;
       padding: 30px 16px;
-      width: 390px;
 
       &__title {
         font-size: 20px;
