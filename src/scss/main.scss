@@ -7,6 +7,11 @@
 
 // подключения компонентов страницы
 @import './components/header';
+@import './components/coll';
+@import './components/pages-coll';
+@import './components/footer';
+
+// main page
 @import './components/hero';
 @import './components/process';
 @import './components/complex';
@@ -16,5 +21,15 @@
 @import './components/case';
 @import './components/choose';
 @import './components/review';
-@import './components/coll';
-@import './components/footer';
+
+// about_us page
+@import './components/about-hero';
+@import './components/about-elevating';
+@import './components/about-team';
+@import './components/about-talent';
+
+// careers page
+@import './components/careers-hero';
+@import './components/careers-speed';
+@import './components/careers-steps';
+@import './components/careers-waiting';

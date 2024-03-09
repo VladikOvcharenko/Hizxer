@@ -1,0 +1,45 @@
+.elevating {
+  margin-top: 200px;
+  &-container {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      background-image: url('../../../img/dots.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 165px;
+      height: 165px;
+    }
+  }
+  &-title {
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+@include small-tablet {
+  .elevating {
+    margin-top: 250px;
+    &-title {
+      font-size: 36px;
+    }
+  }
+}
+
+@include mobile {
+  .elevating {
+    margin-top: 80px;
+    &-container {
+      position: relative;
+    }
+    &-title {
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+}

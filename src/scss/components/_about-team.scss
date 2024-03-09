@@ -1,0 +1,51 @@
+.about-team {
+  margin-top: 54px;
+  &-container {
+    text-align: center;
+  }
+  &-title {
+  }
+  &-list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    &__item {
+      display: grid;
+      gap: 14px;
+
+      text-align: center;
+      text-transform: capitalize;
+    }
+    &__img {
+      height: 220px;
+      border-bottom: 8px solid var(--accent-color);
+      object-fit: cover;
+    }
+    &__name {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    &__position {
+      margin: 0;
+      font-size: 15px;
+    }
+  }
+}
+
+@include small-tablet {
+  .about-team {
+    &-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@include mobile {
+  .about-team {
+    &-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

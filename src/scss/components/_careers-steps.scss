@@ -1,0 +1,45 @@
+.careers-steps {
+  margin-top: 68px;
+  &-title {
+    text-align: center;
+  }
+  &-wrapper {
+    margin-top: 44px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &-item {
+    max-width: 370px;
+    padding: 50px 20px;
+    text-align: center;
+    &__img {
+      height: 200px;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__text {
+      margin-top: 18px;
+    }
+  }
+}
+
+@include mobile {
+  .careers-steps {
+    margin-top: 68px;
+    &-title {
+      text-align: center;
+    }
+    &-wrapper {
+      margin-top: 44px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    &-item {
+      max-width: 430px;
+      padding: 0;
+    }
+  }
+}

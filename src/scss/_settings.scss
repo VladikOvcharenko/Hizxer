@@ -120,7 +120,7 @@ a {
   font-size: 40px;
   line-height: 135%;
   text-transform: capitalize;
-  color: var(--dark-color);
+  color: var(--black-color);
 }
 
 .text {
@@ -128,6 +128,8 @@ a {
   font-family: var(--font-family);
   line-height: 24px;
   color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .color-text {
