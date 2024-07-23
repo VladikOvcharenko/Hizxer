@@ -1,11 +1,9 @@
 .hero {
-  width: 100%;
-  margin: 0 auto;
   background-color: var(--bg-color);
 
   &-container {
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 180px;
     padding-bottom: 30px;
   }
   &-desc {
@@ -47,7 +45,7 @@
 @include small-tablet {
   .hero {
     &-container {
-      padding-top: 60px;
+      padding-top: 136px;
       padding-bottom: 30px;
       flex-direction: column;
       gap: 58px;

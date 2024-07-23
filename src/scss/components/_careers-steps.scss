@@ -5,8 +5,8 @@
   }
   &-wrapper {
     margin-top: 44px;
-
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
   }
   &-item {
@@ -27,7 +27,7 @@
 
 @include mobile {
   .careers-steps {
-    margin-top: 68px;
+    margin-top: 38px;
     &-title {
       text-align: center;
     }
@@ -40,6 +40,9 @@
     &-item {
       max-width: 430px;
       padding: 0;
+      &__img {
+        height: 160px;
+      }
     }
   }
 }

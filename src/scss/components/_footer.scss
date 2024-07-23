@@ -5,8 +5,8 @@
   }
 
   &-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     padding: 70px 0;
     margin-top: 100px;
     border-top: 2px solid #979797;
@@ -14,7 +14,8 @@
   }
   &-logo {
     padding-left: 80px;
-    width: 342px;
+    padding-right: 30px;
+    max-width: 342px;
     height: 97px;
   }
   &-contact {
@@ -26,28 +27,34 @@
     }
     &__location {
       padding-left: 32px;
+      font-size: 14px;
       background-image: url('../img/svg/location.svg');
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 24px;
     }
     &__phone {
       color: var(--light-color);
       padding-left: 32px;
+      font-size: 14px;
       background-image: url('../img/svg/phone.svg');
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 24px;
+      line-height: 160%;
     }
     &__email {
       color: var(--light-color);
       padding-left: 32px;
+      font-size: 14px;
       background-image: url('../img/svg/mail.svg');
       background-repeat: no-repeat;
       background-size: contain;
+      background-size: 24px;
+      line-height: 160%;
     }
   }
   &-socials {
     margin-top: 26px;
-    gap: 33px;
+    justify-content: space-between;
     &__text {
       font-weight: 500;
       font-size: 14px;
@@ -93,8 +100,9 @@
 @include small-tablet {
   .footer {
     &-logo {
-      padding-left: 15px;
+      padding-left: 0px;
     }
+
     &-bottom {
       flex-direction: column;
       gap: 50px;
@@ -107,35 +115,32 @@
   }
 }
 
-@include mobile {
+@include big-mobile {
   .footer {
     &-bottom {
-      padding: 24px 0 46px;
+      padding: 24px 0 24px;
       justify-content: space-between;
+      gap: 30px;
     }
     &-wrapper {
-      grid-template-columns: 1fr;
-      gap: 38px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
       justify-items: center;
-      margin-top: 100px;
-      padding-top: 40px;
+      margin-top: 60px;
+      padding: 30px 0;
     }
     &-logo {
-      padding-left: 0px;
+      padding: 0px;
     }
-    &-contact {
-      &__box {
-        justify-items: center;
-        grid-template-columns: 1fr;
-      }
-    }
+
     &-socials {
       margin-top: 26px;
       gap: 18px;
     }
     &-nav {
       &__list {
-        gap: 8px;
+        gap: 16px;
         align-items: flex-start;
       }
       &__link {

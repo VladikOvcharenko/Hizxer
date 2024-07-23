@@ -16,10 +16,9 @@
       position: relative;
       max-width: 590px;
       height: auto;
-      // object-fit: cover;
     }
   }
-  &-optimased {
+  &-optimised {
     position: absolute;
     left: 40px;
     width: 172px;
@@ -70,10 +69,10 @@
   .careers-speed {
     &-wrapper {
       img {
-        max-width: 390px;
+        max-width: 360px;
       }
     }
-    &-optimased {
+    &-optimised {
       left: 0;
       width: 102px;
       height: 102px;
@@ -87,16 +86,15 @@
   }
 }
 
-@include mobile {
+@include big-mobile {
   .careers-speed {
     &-wrapper {
       margin-top: 44px;
       justify-content: center;
       gap: 38px;
-
       flex-direction: column;
     }
-    &-optimased {
+    &-optimised {
       left: 0;
       top: 110px;
       width: 102px;

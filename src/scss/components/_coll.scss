@@ -7,8 +7,7 @@
       position: relative;
     }
     &__title {
-      margin-left: 110px;
-      font-size: 32px;
+      margin-left: 15px;
     }
   }
   &-bottom {
@@ -28,10 +27,7 @@
     background-color: var(--light-color);
     box-shadow: 0 4px 99px 0 rgba(0, 0, 0, 0.15);
     &__title {
-      font-weight: 600;
-      font-size: 32px;
       line-height: 128%;
-      text-transform: capitalize;
       text-align: center;
     }
     &__wrapper {
@@ -91,8 +87,20 @@
     }
     &-form {
       position: absolute;
-      top: 210px;
-      right: 50px;
+      top: 240px;
+      right: 15px;
+    }
+  }
+}
+
+@include big-mobile {
+  .coll {
+    &-form {
+      top: 330px;
+      left: 15px;
+      right: 15px;
+      max-width: 600px;
+      padding: 35px 16px;
     }
   }
 }
@@ -108,23 +116,11 @@
       &__title {
         margin: 0 56px;
         text-align: center;
-        font-size: 24px;
       }
     }
     &-bottom {
       height: 788px;
       background-size: cover;
-    }
-    &-form {
-      position: absolute;
-      top: 260px;
-      left: 15px;
-      right: 15px;
-      padding: 35px 16px;
-
-      &__title {
-        font-size: 20px;
-      }
     }
   }
 }

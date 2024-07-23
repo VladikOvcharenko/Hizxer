@@ -1,0 +1,110 @@
+.faq-rates {
+  padding-top: 132px;
+  &-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 38px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+
+    &__item {
+      position: relative;
+      padding: 40px 65px 69px;
+      max-width: 292px;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      border-radius: 8px;
+
+      transition: color 0.3s ease-in-out, transform 0.3s ease-in-out,
+        background 0.3s ease-in-out;
+
+      &:hover {
+        transform: translate(8%, -8%);
+        box-shadow: 0 42px 34px 0 rgba(82, 67, 194, 0.3);
+        background: #5243c2;
+
+        .faq-rates-list__item-price,
+        .faq-rates-list__item-name,
+        .faq-rates-list__item-descr,
+        .faq-rates-list__item-list__item {
+          color: var(--light-color);
+        }
+        .faq-rates-list__item-list__item {
+          background-image: url('../img/faq/faq-ok-light.png');
+        }
+        .faq-rates-list__item-list__btn,
+        .faq-rates-list__item-popular {
+          background: #2a145f;
+        }
+      }
+      &-popular {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        margin: 0;
+        padding: 8px 10px 6px;
+
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        color: var(--light-color);
+        text-transform: uppercase;
+        border-radius: 8px;
+        background: #6941c6;
+      }
+      &-price {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 128%;
+        color: #231d4f;
+      }
+      &-name {
+        margin-top: 20px;
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 28px;
+        color: #231d4f;
+      }
+      &-descr {
+        margin-top: 10px;
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 15px;
+        color: #848199;
+      }
+      &-list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &__item {
+          padding-left: 30px;
+          font-family: var(--second-family);
+          font-weight: 500;
+          font-size: 15px;
+          color: #848199;
+
+          background-repeat: no-repeat;
+          background-size: 20px;
+          background-image: url('../img/faq/faq-ok.png');
+        }
+        &__btn {
+          margin-top: 24px;
+
+          font-family: var(--second-family);
+          font-weight: 700;
+          font-size: 15px;
+          text-align: center;
+          color: var(--light-color);
+          border-radius: 8px;
+          padding: 16px 30px 14px;
+          width: 147px;
+          background: #6941c6;
+        }
+      }
+    }
+  }
+}

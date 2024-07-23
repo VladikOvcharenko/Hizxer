@@ -3,24 +3,22 @@
   &-container {
     text-align: center;
   }
-  &-title {
-  }
+
   &-list {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
     &__item {
       display: grid;
       gap: 14px;
-
       text-align: center;
       text-transform: capitalize;
     }
     &__img {
       height: 220px;
       border-bottom: 8px solid var(--accent-color);
-      object-fit: cover;
+      border-radius: 10px 10px 0 0;
     }
     &__name {
       margin: 0;
@@ -42,10 +40,11 @@
   }
 }
 
-@include mobile {
+@include big-mobile {
   .about-team {
     &-list {
       grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
     }
   }
 }

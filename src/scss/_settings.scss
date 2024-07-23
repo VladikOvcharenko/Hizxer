@@ -27,6 +27,8 @@ img {
   height: auto;
   max-width: 100%;
   object-fit: cover;
+  user-select: none !important;
+  pointer-events: none !important;
 }
 
 a {
@@ -34,7 +36,7 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  overflow: hidden;
 }
 
 .is-hidden {
@@ -117,7 +119,7 @@ a {
   margin: 0;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 40px;
+  font-size: clamp(1.875rem, 1.397rem + 1.96vw, 2.5rem);
   line-height: 135%;
   text-transform: capitalize;
   color: var(--black-color);
@@ -139,7 +141,6 @@ a {
 
 @include small-tablet {
   .title {
-    font-size: 36px;
     line-height: 130%;
   }
   .text {
@@ -148,9 +149,6 @@ a {
   }
 }
 @include mobile {
-  .title {
-    font-size: 32px;
-  }
   .text {
     line-height: 110%;
   }
