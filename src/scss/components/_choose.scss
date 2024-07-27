@@ -66,9 +66,14 @@
   }
 }
 
+@include small-tablet {
+  .choose {
+    margin-top: 80px;
+  }
+}
 @include mobile {
   .choose {
-    margin-top: 116px;
+    margin-top: 60px;
     &-container {
       display: grid;
     }

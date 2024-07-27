@@ -1,5 +1,9 @@
 .faq-rates {
   padding-top: 132px;
+
+  @include mobile {
+    padding-top: 60px;
+  }
   &-list {
     flex-wrap: wrap;
     justify-content: center;

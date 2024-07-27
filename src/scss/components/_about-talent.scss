@@ -23,6 +23,7 @@
         grid-column: 2 span;
         background-color: var(--accent-color);
         color: var(--light-color);
+
         & .about-talent-wrapper__desc {
           color: var(--light-color);
         }
@@ -32,6 +33,12 @@
         button {
           background-color: var(--light-color);
           color: var(--accent-color);
+
+          transition: all 0.4s ease;
+          &:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0px 30px 0 var(--light-color);
+          }
         }
       }
     }
@@ -80,12 +87,15 @@
 @include mobile {
   .about-talent {
     margin: 80px 0 20px;
+    &-container {
+      gap: 10px;
+    }
 
     &-wrapper {
       margin-top: 40px;
       display: flex;
       flex-direction: column;
-      gap: 40px;
+      gap: 20px;
     }
   }
 }

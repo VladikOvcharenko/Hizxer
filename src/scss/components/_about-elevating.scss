@@ -23,7 +23,7 @@
 
 @include small-tablet {
   .elevating {
-    margin-top: 250px;
+    margin-top: 300px;
     &-title {
       font-size: 36px;
     }
@@ -32,7 +32,7 @@
 
 @include mobile {
   .elevating {
-    margin-top: 80px;
+    margin-top: 160px;
     &-container {
       position: relative;
     }

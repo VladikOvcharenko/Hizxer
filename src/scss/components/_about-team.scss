@@ -15,10 +15,20 @@
       text-align: center;
       text-transform: capitalize;
     }
+
+    &__box {
+      overflow: hidden;
+      border-radius: 10px 10px 0 0;
+
+      &:hover .about-team-list__img {
+        transform: translateY(38%) scale(1.8);
+      }
+    }
     &__img {
       height: 220px;
       border-bottom: 8px solid var(--accent-color);
-      border-radius: 10px 10px 0 0;
+
+      transition: all 0.3s ease;
     }
     &__name {
       margin: 0;

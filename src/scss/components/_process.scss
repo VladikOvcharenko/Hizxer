@@ -1,17 +1,20 @@
 .process {
   padding: 144px 0;
   &-container {
-    justify-content: center;
-    gap: 64px;
+    justify-content: space-between;
   }
   &-video {
-    width: 600px;
-    height: 420px;
-    border-radius: 8px;
-    box-shadow: 0 36px 111px 0 rgba(0, 0, 0, 0.15);
-    background-image: url('../img/play.png');
-    background-position: center;
-    background-repeat: no-repeat;
+    margin: 0 15px;
+    max-width: 640px;
+    width: 100%;
+    max-height: 320px;
+
+    &__item {
+      width: 100%;
+
+      border-radius: 8px;
+      box-shadow: 0 36px 111px 0 rgba(0, 0, 0, 0.15);
+    }
   }
   &-wrapper {
     max-width: 488px;
@@ -20,11 +23,16 @@
     gap: 38px;
     &__subtitle {
       margin-top: 38px;
-      font-family: var(--font-family);
       font-weight: 300;
-      font-size: 14px;
       text-transform: capitalize;
-      color: var(--text-color);
+    }
+  }
+}
+
+@include tablet {
+  .process {
+    &-container {
+      gap: 34px;
     }
   }
 }
@@ -52,12 +60,8 @@
     }
   }
 }
-@include mobile {
+@include big-mobile {
   .process {
     padding: 70px 0;
-    &-video {
-      width: 100%;
-      height: 190px;
-    }
   }
 }

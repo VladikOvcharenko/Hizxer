@@ -113,3 +113,11 @@
     color: var(--accent-color);
   }
 }
+
+@include mobile {
+  .header {
+    &-wrapper {
+      padding: 4px 0;
+    }
+  }
+}

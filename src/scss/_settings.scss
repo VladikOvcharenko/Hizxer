@@ -82,10 +82,18 @@ a {
   clip: rect(0 0 0 0);
 }
 
+// .container {
+//   margin: 0 auto;
+//   padding: 0 var(--container-offset);
+//   max-width: var(--container-width);
+// }
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  padding: 0 30px;
+  max-width: 1360px;
+  @include mobile {
+    padding: 0 16px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -144,12 +152,6 @@ a {
     line-height: 130%;
   }
   .text {
-    font-size: 12px;
-    line-height: 120%;
-  }
-}
-@include mobile {
-  .text {
-    line-height: 110%;
+    font-size: 14px;
   }
 }
